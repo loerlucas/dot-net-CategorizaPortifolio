@@ -3,10 +3,10 @@ Estrutura do Projeto CategorizaPortifólio
     o	Contém o ponto de entrada da aplicação, Program.cs.
   2.	Domain/
     o	Contém as classes e interfaces que representam o núcleo do domínio do problema.
-    o	Categories/: Contém as implementações das categorias (ExpiredCategory, HighRiskCategory, MediumRiskCategory) e a classe base TradeCategoryBase.
-    o	Factories/: Contém a fábrica TradeCategoryFactory.
-    o	Interfaces/: Armazena as interfaces como ITrade e ITradeCategory.
-    o	Models/: Contém a implementação de modelos, como a classe Trade.
+      o	Categories/: Contém as implementações das categorias (ExpiredCategory, HighRiskCategory, MediumRiskCategory) e a classe base TradeCategoryBase.
+      o	Factories/: Contém a fábrica TradeCategoryFactory.
+      o	Interfaces/: Armazena as interfaces como ITrade e ITradeCategory.
+      o	Models/: Contém a implementação de modelos, como a classe Trade.
   3.	Services/
     o	Contém classes que implementam a lógica de negócio e serviços, como TradeProcessor e InputReader.
   4.	Tests/
