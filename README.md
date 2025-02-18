@@ -30,3 +30,20 @@ Padrões utilizados
     o	Facilita a criação de testes unitários para TradeProcessor, InputReader e TradeCategoryFactory.
   5.	Flexibilidade:
     o	Adicionar novas categorias é fácil, basta implementar ITradeCategory e adicionar à fábrica.
+
+Explicação da Estrutura
+  Domain/  
+    Contém as classes e interfaces que representam o núcleo do domínio do problema.
+      Interfaces/: Armazena as interfaces como ITrade e ITradeCategory.   
+      Models/: Contém a implementação de modelos, como a classe Trade.    
+      Categories/: Contém as implementações das categorias (ExpiredCategory, HighRiskCategory, MediumRiskCategory) e a classe base TradeCategoryBase.
+      Factories/: Contém a fábrica TradeCategoryFactory.
+  
+  Services/  
+    Contém classes que implementam a lógica de negócio e serviços, como TradeProcessor e InputReader.
+  App/  
+    Contém o ponto de entrada da aplicação, Program.cs.
+  Tests/
+    Contém os testes unitários, como TradeProcessorTests.
+
+
